@@ -50,7 +50,15 @@
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+              <archive>
+                <manifest>
+                 <mainClass>basic.services.App</mainClass>
+                </manifest>
+              </archive>
+            </configuration>
           <version>3.0.2</version>
+
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
