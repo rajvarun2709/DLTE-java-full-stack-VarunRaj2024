@@ -2,27 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c50840f0-2b44-4d62-9c6b-256ecbc94eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fullstack.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/basic/services/Blocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/basic/services/Interaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fullstack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fullstack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DLTE-Java-001-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DLTE-Java-001-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-basic.services.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-basic.services.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/basic.services.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/basic.services.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/basic/services/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/basic/services/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/basic/services/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/basic/services/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2cQwZLtrWcyP4jgEvQflyUgJsRQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,9 +55,44 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="Application.Interaction">
+    <configuration name="Blocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basic.services.Blocks" />
+      <module name="fullstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basic.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Interaction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basic.services.Interaction" />
+      <module name="fullstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basic.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Interaction" />
+        <item itemvalue="Application.Blocks" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -70,7 +117,8 @@
       <option name="presentableId" value="Default" />
       <updated>1708057164428</updated>
       <workItem from="1708057170310" duration="2806000" />
-      <workItem from="1708072810716" duration="2210000" />
+      <workItem from="1708072810716" duration="9830000" />
+      <workItem from="1708244063585" duration="2447000" />
     </task>
     <servers />
   </component>
@@ -78,30 +126,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="321" key="GridCell.Tab.0.bottom" timestamp="1708074926779">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1708082978579">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="321" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1708074926779" />
-    <state width="1493" height="321" key="GridCell.Tab.0.center" timestamp="1708074926779">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1708082978579" />
+    <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1708081818955">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="321" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1708074926779" />
-    <state width="1493" height="321" key="GridCell.Tab.0.left" timestamp="1708074926779">
+    <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.816@0.0.1536.816" timestamp="1708081818955" />
+    <state x="498" y="199" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1708081198627">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="321" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1708074926779" />
-    <state width="1493" height="321" key="GridCell.Tab.0.right" timestamp="1708074926779">
+    <state x="498" y="199" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.816@0.0.1536.816" timestamp="1708081198627" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1708078724562">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="321" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1708074926779" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1708058033494">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1708078724562" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1708247774000">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1708058033494" />
-    <state x="477" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1708072813829">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1708247774000">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="477" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1708072813829" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1708247774000">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1708247774000">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1708079060471">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1708079060471" />
+    <state x="477" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1708244067276">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="477" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1708244067276" />
     <state x="365" y="658" width="672" height="677" key="run.anything.popup" timestamp="1708057715786">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
