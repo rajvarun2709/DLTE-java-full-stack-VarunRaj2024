@@ -1,1 +1,7 @@
+basic\services\Investment.class
+basic\services\Blocks.class
+basic\services\Interaction.class
+basic\services\RdAnalysis.class
+basic\services\Flexipay.class
+basic\services\DispenseCash.class
 basic\services\App.class

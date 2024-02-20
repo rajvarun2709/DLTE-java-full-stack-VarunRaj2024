@@ -19,7 +19,7 @@ public class Interaction {
         aadhar=scanner.nextLong();
         System.out.println("Enter the pan");
         borrowerpan=scanner.next();
-        System.out.println("Let us know Incom type(salaried/self-employed");
+        System.out.println("Let us know Incom type(salaried/self-employed)");
         scanner.nextLine();
         borrowerincometype=scanner.nextLine();
         System.out.println("Mention the mobile number");

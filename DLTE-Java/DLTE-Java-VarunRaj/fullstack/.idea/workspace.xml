@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c50840f0-2b44-4d62-9c6b-256ecbc94eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/services/Blocks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/services/Interaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fullstack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fullstack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/basic/services/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/basic/services/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/basic/services/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/basic/services/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basic/services/Interaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic/services/Interaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +110,8 @@
       <workItem from="1708057170310" duration="2806000" />
       <workItem from="1708072810716" duration="9830000" />
       <workItem from="1708244063585" duration="2447000" />
+      <workItem from="1708305598437" duration="1287000" />
+      <workItem from="1708306930084" duration="87000" />
     </task>
     <servers />
   </component>
@@ -138,34 +131,38 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="498" y="199" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.816@0.0.1536.816" timestamp="1708081198627" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1708078724562">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1708306995496">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1708078724562" />
-    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1708247774000">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1708306995496" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1708306896325">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
-    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1708247774000">
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1708306896325" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1708306896325">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
-    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1708247774000">
+    <state width="1493" height="259" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1708306896325" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1708306896325">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
-    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1708247774000">
+    <state width="1493" height="259" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1708306896325" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1708306896325">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1708247774000" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1708306896325" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1708079060471">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1708079060471" />
-    <state x="477" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1708244067276">
+    <state x="477" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1708306931447">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="477" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1708244067276" />
+    <state x="477" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1708306931447" />
+    <state x="209" y="114" key="new project wizard" timestamp="1708307015400">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="209" y="114" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1708307015400" />
     <state x="365" y="658" width="672" height="677" key="run.anything.popup" timestamp="1708057715786">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
