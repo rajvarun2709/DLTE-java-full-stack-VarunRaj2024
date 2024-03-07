@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Carloan {
     public static void main(String[] args) {
-        String name, aadhar, pan, address, mobile, email, incometype;
+        String name, aadhar, pan, address, mobile, email, incomeType;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter name");
         name=sc.nextLine();
