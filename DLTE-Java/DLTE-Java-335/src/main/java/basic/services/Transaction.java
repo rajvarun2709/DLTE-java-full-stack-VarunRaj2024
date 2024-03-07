@@ -8,9 +8,9 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Transaction {
-    private Date transactiondate;
-    private Double transactionamount;
-    private String transactionto;
+    private Date transactionDate;
+    private Double transactionAmount;
+    private String transactionTo;
     private String remarks;
 
 

@@ -20,11 +20,11 @@ public class CustomerSupport {
         choice = scanner.nextInt();
 
             switch (choice){
-                case 1: customer.Date(myBank);
+                case 1: customer.date(myBank);
                     break;
                 case 2: customer.leastAmount(myBank);
                     break;
-                case 3: customer.MaximumAmount(myBank);
+                case 3: customer.maximumAmount(myBank);
                     break;
                 case 4: System.out.println("enter the number name of the beneficiary");
                         String name=scanner.next();
@@ -33,7 +33,7 @@ public class CustomerSupport {
                 case 5:
                     System.out.println("entre the name of remark");
                     String remark=scanner.next();
-                    customer.Remarks(myBank,remark);
+                    customer.remarks(myBank,remark);
                     break;
                 case 6:
                     customer.descendingBenificiary(myBank);
@@ -47,11 +47,11 @@ public class CustomerSupport {
 
     }
 
-    public static void Date(Transaction[] myBank) {
+    public static void date(Transaction[] myBank) {
         for(Transaction each: myBank){
-            if (each.getTransactiondate().after(new Date(2024,9,23))&&each.getTransactiondate().before(new Date(2024,11,29)))
+            if (each.getTransactionDate().after(new Date(2024,9,23))&&each.getTransactionDate().before(new Date(2024,11,29)))
             {
-                System.out.println("Date:"+each.getTransactiondate()+ " ,Transacted amount:"+each.getTransactionamount()+ ", Transacted to:"+each.getTransactionto()+ " ,Remark:"+each.getRemarks());
+                System.out.println("Date:"+each.getTransactionDate()+ " ,Transacted amount:"+each.getTransactionAmount()+ ", Transacted to:"+each.getTransactionTo()+ " ,Remark:"+each.getRemarks());
             }
         }
     }
@@ -60,22 +60,22 @@ public class CustomerSupport {
         double temporary=99999;
         String name="";
         for(Transaction each: myBank){
-            if(each.getTransactionamount()<temporary){
-                temporary=each.getTransactionamount();
-                name=each.getTransactionto();
+            if(each.getTransactionAmount()<temporary){
+                temporary=each.getTransactionAmount();
+                name=each.getTransactionTo();
             }
         }
         System.out.println("The least amount transferred is"+name+"is:"+temporary);
     }
 
-    private static void MaximumAmount(Transaction[] myBank) {
+    private static void maximumAmount(Transaction[] myBank) {
         double temporary=0.0;
         String name="";
         for(Transaction each: myBank){
 
-            if(each.getTransactionamount()>temporary){
-                name=each.getTransactionto();
-                temporary=each.getTransactionamount();
+            if(each.getTransactionAmount()>temporary){
+                name=each.getTransactionTo();
+                temporary=each.getTransactionAmount();
 
             }
         }
@@ -86,19 +86,19 @@ public class CustomerSupport {
         String Name="";
         int count=0;
         for (Transaction each: myBank){
-            if(each.getTransactionto().equals(name)){
+            if(each.getTransactionTo().equals(name)){
                 count++;
-                Name=each.getTransactionto();
+                Name=each.getTransactionTo();
             }
         }
         System.out.println("Number of transaction made to "+Name+" is "+count);
     }
 
-    private static void Remarks(Transaction[] myBank, String remark) {
+    private static void remarks(Transaction[] myBank, String remark) {
         double number=0;
         for (Transaction each: myBank){
             if(each.getRemarks().equals(remark)){
-                number+=each.getTransactionamount();
+                number+=each.getTransactionAmount();
             }
         }
         System.out.println("Amount transferred for the remark "+remark+" is "+number);
@@ -111,11 +111,11 @@ public class CustomerSupport {
 
         do {
             swap = false;
-            for (int i = 0; i < length - 1; i++) {
-                if (myBank[i].getTransactionamount().compareTo(myBank[i + 1].getTransactionamount()) > 0) {
-                    Transaction temp = myBank[i];
-                    myBank[i] = myBank[i + 1];
-                    myBank[i + 1] = temp;
+            for (int index = 0; index < length - 1; index++) {
+                if (myBank[index].getTransactionAmount().compareTo(myBank[index + 1].getTransactionAmount()) > 0) {
+                    Transaction temp = myBank[index];
+                    myBank[index] = myBank[index + 1];
+                    myBank[index + 1] = temp;
                     swap= true;
                 }
             }
@@ -133,19 +133,19 @@ public class CustomerSupport {
     public static void descendingBenificiary(Transaction[] myBank) {
 
         boolean swapped;
-        int n = myBank.length;
+        int length = myBank.length;
 
         do {
             swapped = false;
-            for (int i = 0; i < n - 1; i++) {
-                if (myBank[i].getTransactionto().compareTo(myBank[i + 1].getTransactionto()) < 0) {
-                    Transaction temp = myBank[i];
-                    myBank[i] = myBank[i + 1];
-                    myBank[i + 1] = temp;
+            for (int index = 0; index < length - 1; index++) {
+                if (myBank[index].getTransactionTo().compareTo(myBank[index + 1].getTransactionTo()) < 0) {
+                    Transaction temp = myBank[index];
+                    myBank[index] = myBank[index + 1];
+                    myBank[index + 1] = temp;
                     swapped = true;
                 }
             }
-            n--;
+            length--;
         } while (swapped);
 
 
