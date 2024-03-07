@@ -6,9 +6,9 @@ public class Minimumbalance {
         System.out.println("Enter the number of customer");
         int numberofCustomers=input.nextInt();
         double[] customerBalances=new double[numberofCustomers];
-        for(int i=0;i<numberofCustomers;i++) {
-            System.out.println("Enter balance for customer" + (i + 1) + ":");
-            customerBalances[i] = input.nextDouble();
+        for(int index = 0; index <numberofCustomers; index++) {
+            System.out.println("Enter balance for customer" + (index + 1) + ":");
+            customerBalances[index] = input.nextDouble();
         }
             updateBalances(customerBalances);
             System.out.println("Updated Customer Balances:");
