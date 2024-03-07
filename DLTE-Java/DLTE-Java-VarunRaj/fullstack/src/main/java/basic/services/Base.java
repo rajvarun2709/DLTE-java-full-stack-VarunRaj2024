@@ -1,4 +1,56 @@
 package basic.services;
 
-public class Base {
+
+abstract class Subject {
+    Subject() {
+        System.out.println("Learning Subject");
+    }
+
+    abstract void syllabus();
+
+    void Learn(){
+        System.out.println("Preparing Right Now!");
+    }
 }
+
+class IT extends Subject {
+    void syllabus(){
+        System.out.println("C , Java , C++");
+    }
+}
+
+class Base {
+    public static void main(String[] args) {
+        Subject x=new IT();
+
+        x.syllabus();
+        x.Learn();
+    }
+}
+
+/*abstract class Sunstar {
+    abstract void printInfo();
+}
+
+class Employee extends Sunstar {
+    void printInfo()
+    {
+        String name = "avinash";
+        int age = 21;
+        float salary = 222.2F;
+
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(salary);
+    }
+}
+
+class Base {
+    public static void main(String args[])
+    {
+        Sunstar s = new Employee();
+        s.printInfo();
+    }
+}
+/*
+ */

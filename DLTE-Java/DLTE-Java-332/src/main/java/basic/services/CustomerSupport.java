@@ -43,8 +43,8 @@ public class CustomerSupport {
             if(pins.equals(each.getCreditCardPin())) {
                 System.out.println("Enter new pin");
                 Scanner input = new Scanner(System.in);
-                int newPincode = input.nextInt();
-                each.setCreditCardPin(newPincode);
+                int newPin = input.nextInt();
+                each.setCreditCardPin(newPin);
                 System.out.println("Update succesfully");
                 break;
             }

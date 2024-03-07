@@ -1,14 +1,12 @@
 package basic.services;
-
 import java.util.Scanner;
-
 public class Minimumbalance {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Enter the number of customer");
-        int numCustomers=input.nextInt();
-        double[] customerBalances=new double[numCustomers];
-        for(int i=0;i<numCustomers;i++) {
+        int numberofCustomers=input.nextInt();
+        double[] customerBalances=new double[numberofCustomers];
+        for(int i=0;i<numberofCustomers;i++) {
             System.out.println("Enter balance for customer" + (i + 1) + ":");
             customerBalances[i] = input.nextDouble();
         }
@@ -18,17 +16,15 @@ public class Minimumbalance {
                 System.out.println("Customer"+(i+1)+":"+customerBalances[i]);
             }
             input.close();
-
         }
         static void updateBalances(double[] balances){
-            for (int i=0;i<balances.length;i++){
-                if(balances[i]<10000){
-                    if(balances[i]>=5000&&balances[i]<9999){
-                        balances[i]-=balances[i]*0.03;
-
+            for (int index=0;index<balances.length;index++){
+                if(balances[index]<10000){
+                    if(balances[index]>=5000&&balances[index]<9999){
+                        balances[index]-=balances[index]*0.03;
                     }
-                    else if(balances[i]>=1000&&balances[i]<5000){
-                        balances[i]-=balances[i]*0.05;
+                    else if(balances[index]>=1000&&balances[index]<5000){
+                        balances[index]-=balances[index]*0.05;
                     }
                 }
             }
