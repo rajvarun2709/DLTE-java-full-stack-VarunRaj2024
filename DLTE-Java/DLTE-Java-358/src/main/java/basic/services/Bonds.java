@@ -12,6 +12,6 @@ public class Bonds {
     private Boolean taxStatus;
     private String bondHolder;
     private Integer period;
-    private String bondissuer;
+    private String bondIssuer;
 
 }
