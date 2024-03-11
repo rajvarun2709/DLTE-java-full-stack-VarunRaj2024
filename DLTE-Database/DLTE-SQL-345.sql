@@ -1,25 +1,17 @@
-create table transaction_oracle(transaction_id number not null,transaction_date date not null,transaction_to varchar(255) not null,transaction_amount number(10) not null,transaction_remarks varchar(255));
+create table Transaction(transaction_id number primary key,transaction_date date not null,transaction_to varchar(255) not null,transaction_amount number not null, transaction_remarks varchar(255) not null);
 
-create sequence transaction_sequence start with 2024041 increment by 1;
+insert into Transaction values(1,'02-Feb-2024','Savitha',1250,'Family');
+insert into Transaction values(2,'08-Feb-2024','Param',1400,'Education');
+insert into Transaction values(3,'22-Feb-2024','Vijay',1100,'Friend');
+insert into Transaction values(4,'12-Feb-2024','Gagana',5000,'Friend');
+insert into Transaction values(5,'15-Feb-2024','Reeva',900,'Emergency');
+Create view dateFilter as select * from Transaction where transaction_date between '10-feb-2024' and '25-mar-2024';
 
-alter table transaction_oracle add constraint transaction_sequence primary key(transaction_id);
+create view minimumAmountselect as select min(transaction_amount) from Transaction;
 
-insert into transaction_oracle(transaction_id,transaction_to,transaction_amount,transaction_date,transaction_remarks) values (transaction_seq.nextval,'Arun',1205,'23-Mar-2024','Restaurant');
+create view maxAmount as select max(transaction_amount) from Transaction;
 
-insert into transaction_oracle(transaction_id,transaction_to,transaction_amount,transaction_date,transaction_remarks) values (transaction_seq.nextval,'Vighnesh',1232,'29-Feb-2024','School fee');
-
-insert into transaction_oracle(transaction_id,transaction_to,transaction_amount,transaction_date,transaction_remarks) values (transaction_seq.nextval,'Hana',8523,'15-Sep-2024','Bus Ticket');
-
-insert into transaction_oracle(transaction_id,transaction_to,transaction_amount,transaction_date,transaction_remarks) values (transaction_seq.nextval,'vishura',2563,'08-Nov-2024','Bus');
-
-insert into transaction_oracle(transaction_id,transaction_to,transaction_amount,transaction_date,transaction_remarks) values (transaction_seq.nextval,'Vinaya',4215,'15-Aug-2024','Bus');
-
-select * from transaction_oracle where transaction_date between '1-Sep-2024' and '30-Dec-2024';
-
-select min(transaction_amount) from transaction_oracle;
-
-select max(transaction_amount) from transaction_oracle;
-
-select count(*)  from transaction_oracle where transaction_to='Vinaya';
-
-select * from transaction_oracle where transaction_remarks='Restaurant';
+create view transactionCount as select count(transaction_to) from Transaction where transaction_to='Param';
+ 
+select * from Transaction where transaction_remarks='Emergency';
+ 
