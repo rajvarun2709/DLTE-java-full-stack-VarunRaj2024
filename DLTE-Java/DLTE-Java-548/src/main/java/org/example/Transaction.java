@@ -1,55 +1,68 @@
 package org.example;
 
+
 import java.util.Date;
 
-public class Transaction {
-    private Date dateOfTransaction;
+public class Transaction implements  Comparable<Transaction>{
+    private Date transactionDate;
+    private Double amountInTransaction;
+    private String sentTo;
+    private String remarks;
 
-    public Transaction(Date dateOfTransaction, Integer amountInTransaction, String beneficiary, String remarks) {
-        this.dateOfTransaction = dateOfTransaction;
+    public Transaction() {
+    }
+
+    public Transaction(Date transactionDate, Double amountInTransaction, String sentTo, String remarks) {
+        this.transactionDate = transactionDate;
         this.amountInTransaction = amountInTransaction;
-        this.beneficiary = beneficiary;
+        this.sentTo = sentTo;
         this.remarks = remarks;
     }
 
-    public void setDateOfTransaction(Date dateOfTransaction) {
-        this.dateOfTransaction = dateOfTransaction;
+    public Date getTransactionDate() {
+        return transactionDate;
     }
 
-    public void setAmountInTransaction(Integer amountInTransaction) {
-        this.amountInTransaction = amountInTransaction;
+    public void setTransactionDate(Date transactionDate) {
+        this.transactionDate = transactionDate;
     }
 
-    public void setBeneficiary(String beneficiary) {
-        this.beneficiary = beneficiary;
-    }
-
-    public void setRemarks(String remarks) {
-        this.remarks = remarks;
-    }
-
-    private Integer amountInTransaction;
-    private String beneficiary;
-
-    public Date getDateOfTransaction() {
-        return dateOfTransaction;
-    }
-
-    public Integer getAmountInTransaction() {
+    public Double getAmountInTransaction() {
         return amountInTransaction;
     }
 
-    public String getBeneficiary() {
-        return beneficiary;
+    public void setAmountInTransaction(Double amountInTransaction) {
+        this.amountInTransaction = amountInTransaction;
+    }
+
+    public String getSentTo() {
+        return sentTo;
+    }
+
+    public void setSentTo(String sentTo) {
+        this.sentTo = sentTo;
     }
 
     public String getRemarks() {
         return remarks;
     }
 
-    public Transaction() {
-        System.out.println("Initialize");
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
 
-    private String remarks;
+    @Override
+    public String toString() {
+        return "Transactions{" +
+                "transactionDate=" + transactionDate +
+                ", amountInTransaction=" + amountInTransaction +
+                ", sentTo='" + sentTo + '\'' +
+                ", remarks='" + remarks + '\'' +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Transaction o) {
+        return 0;
+    }
 }

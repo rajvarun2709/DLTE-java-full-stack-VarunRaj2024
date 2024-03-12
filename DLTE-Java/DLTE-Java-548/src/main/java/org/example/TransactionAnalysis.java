@@ -6,15 +6,11 @@ import java.util.stream.Collectors;
 public class TransactionAnalysis {
     public static void main(String[] args) {
         List<Transaction> transaction=new ArrayList<>();
-
-
         transaction.add(new Transaction(new Date("4/20/2021"),1000,"aritha","Family"));
         transaction.add(new Transaction(new Date("6/12/2023"),1020,"vijay","Education"));
         transaction.add(new Transaction(new Date("4/12/2021"),2000,"Prathap","Bill"));
         transaction.add(new Transaction(new Date("7/11/2023"),500,"Sugriva","Friend"));
         transaction.add(new Transaction(new Date("4/1/2021"),1400,"Jeeva","Family"));
-
-
 
         System.out.println("-------------------------------Welcome to MyBank-------------------------");
         System.out.println("****Menu*****");
@@ -67,8 +63,6 @@ public class TransactionAnalysis {
                         comparator=comparator.reversed();
                     transaction.stream().sorted(comparator).forEach(transaction1 -> System.out.println(transaction1.getDateOfTransaction()+" "+transaction1.getAmountInTransaction()+" "+transaction1.getBeneficiary()+" "+transaction1.getRemarks()));
                     break;
-
-
 
 
                 default:System.exit(0);

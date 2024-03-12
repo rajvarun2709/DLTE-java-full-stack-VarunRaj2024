@@ -12,6 +12,9 @@ public class CreditCard {
     private Date dateOfBillPayment;
     private Integer creditCardPin;
 
+    public CreditCard() {
+    }
+
     public CreditCard(Long creditCardNumber, String creditCardHolder, Date creditCardExpiry, Integer creditCardCvv, Integer creditCardLimit, Date dateOfBillGeneration, Date dateOfBillPayment, Integer creditCardPin) {
         this.creditCardNumber = creditCardNumber;
         this.creditCardHolder = creditCardHolder;
@@ -83,10 +86,6 @@ public class CreditCard {
         return creditCardPin;
     }
 
-    public void setCreditCardPin(Integer creditCardPin) {
-        this.creditCardPin = creditCardPin;
-    }
-
     @Override
     public String toString() {
         return "CreditCard{" +
@@ -99,5 +98,9 @@ public class CreditCard {
                 ", dateOfBillPayment=" + dateOfBillPayment +
                 ", creditCardPin=" + creditCardPin +
                 '}';
+    }
+
+    public void setCreditCardPin(Integer creditCardPin) {
+        this.creditCardPin = creditCardPin;
     }
 }
