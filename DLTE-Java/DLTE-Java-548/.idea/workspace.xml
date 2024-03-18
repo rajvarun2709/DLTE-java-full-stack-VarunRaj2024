@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b0e777-d815-4570-8150-1651c7181a8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-925/DLTE-JavaEE-925.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-810/src/main/java/tax/sip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-810/src/main/java/tax/sip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/src/main/java/first/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/src/main/java/first/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/src/main/java/first/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-Java-818/src/main/java/first/Transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +76,7 @@
       <updated>1710120861388</updated>
       <workItem from="1710120864186" duration="938000" />
       <workItem from="1710209157829" duration="2918000" />
-      <workItem from="1710725544457" duration="1967000" />
+      <workItem from="1710725544457" duration="3853000" />
     </task>
     <servers />
   </component>
