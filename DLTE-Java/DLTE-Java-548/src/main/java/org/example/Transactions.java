@@ -1,20 +1,18 @@
 package org.example;
 
 
+
 import java.util.Date;
 
-public class Transaction implements  Comparable<Transaction>{
+public class Transactions {
     private Date transactionDate;
-    private Double amountInTransaction;
+    private double amount;
     private String sentTo;
     private String remarks;
 
-    public Transaction() {
-    }
-
-    public Transaction(Date transactionDate, Double amountInTransaction, String sentTo, String remarks) {
+    public Transactions(Date transactionDate, double amount, String sentTo, String remarks) {
         this.transactionDate = transactionDate;
-        this.amountInTransaction = amountInTransaction;
+        this.amount = amount;
         this.sentTo = sentTo;
         this.remarks = remarks;
     }
@@ -27,12 +25,12 @@ public class Transaction implements  Comparable<Transaction>{
         this.transactionDate = transactionDate;
     }
 
-    public Double getAmountInTransaction() {
-        return amountInTransaction;
+    public double getAmount() {
+        return amount;
     }
 
-    public void setAmountInTransaction(Double amountInTransaction) {
-        this.amountInTransaction = amountInTransaction;
+    public void setAmount(double amount) {
+        this.amount = amount;
     }
 
     public String getSentTo() {
@@ -55,14 +53,10 @@ public class Transaction implements  Comparable<Transaction>{
     public String toString() {
         return "Transactions{" +
                 "transactionDate=" + transactionDate +
-                ", amountInTransaction=" + amountInTransaction +
+                ", amount=" + amount +
                 ", sentTo='" + sentTo + '\'' +
                 ", remarks='" + remarks + '\'' +
                 '}';
     }
-
-    @Override
-    public int compareTo(Transaction o) {
-        return 0;
-    }
 }
+
