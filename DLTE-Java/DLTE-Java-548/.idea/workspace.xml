@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b0e777-d815-4570-8150-1651c7181a8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-925/DLTE-JavaEE-925.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransactionAnalysis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransactionComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransactionException.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Console app" />
@@ -75,7 +71,7 @@
       <updated>1710120861388</updated>
       <workItem from="1710120864186" duration="938000" />
       <workItem from="1710209157829" duration="2918000" />
-      <workItem from="1710725544457" duration="1059000" />
+      <workItem from="1710725544457" duration="1967000" />
     </task>
     <servers />
   </component>
@@ -87,10 +83,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1710725584640" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1710122380109">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1710727297506">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1710122380109" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1710727297506" />
     <state width="1478" height="245" key="GridCell.Tab.0.bottom" timestamp="1710122381684">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -107,9 +103,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1478" height="245" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1710122381684" />
-    <state x="209" y="114" key="new project wizard" timestamp="1710239608598">
+    <state x="209" y="114" key="new project wizard" timestamp="1710727362508">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="209" y="114" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1710239608598" />
+    <state x="209" y="114" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1710727362508" />
   </component>
 </project>
