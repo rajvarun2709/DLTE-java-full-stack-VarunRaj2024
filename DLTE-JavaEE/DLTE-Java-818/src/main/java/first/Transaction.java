@@ -14,7 +14,6 @@ public class Transaction{
         this.to = to;
         this.remarks = remarks;
     }
-
     public Date getDate() {
         return date;
     }

@@ -32,7 +32,6 @@ public class Main extends HttpServlet {
             List<Transaction> transactions = transactionList.stream()
                     .filter(each -> each.getAmount() >= minimum && each.getAmount() <= maximum)
                     .collect(Collectors.toList());
-
             Gson gson = new Gson();
             resp.setContentType("application/json");
             String transactionJson = gson.toJson(transactions);
