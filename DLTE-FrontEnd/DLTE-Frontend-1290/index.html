@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Products</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2798a8; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            padding: 20px; 
+        }
+
+        .product {
+            flex: 1 1 200px; 
+            max-width: 200px; 
+            text-align: center; 
+        }
+
+        .product img,
+        .product video {
+            width: 200px;
+            height: 150px;
+            object-fit: cover; 
+            border-radius: 15px; 
+            margin-bottom: 10px; 
+        }
+
+        .product-info {
+            color: #fff; 
+        }
+
+        .product-info h3 {
+            margin: 5px 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <img src="resource/insurance.jpg" alt="insurance">
+            <div class="product-info">
+                <h3>Insurance</h3>
+                <p>Protect your future with our insurance plans.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="resource/loans.jpg" alt="loans">
+            <div class="product-info">
+                <h3>Loans</h3>
+                <p>Get the funds you need with our flexible loan options.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="resource/savings.jpg" alt="savings">
+            <div class="product-info">
+                <h3>Savings</h3>
+                <p>Start saving today for a better tomorrow.</p>
+            </div>
+        </div>
+        <div class="product">
+            <video controls>
+                <source src="resource/Others.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="product-info">
+                <h3>Other Services</h3>
+                <p>Explore our range of additional services.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
