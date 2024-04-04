@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b8faf8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group2{
+            margin-top:50px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea,
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .logo {
+            float: left;
+            margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+            margin-right: 10px;
+            width: 50px; /* Adjust the width of the logo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><img src="resource/logo.jpg" alt="Bank Logo" class="logo">Checkbook Application Form</h2>
+            <div class="form-group2">
+                <label for="accountNumber">Account Number:</label>
+                <input type="text" id="accountNumber" name="accountNumber" required>
+            </div>
+            <div class="form-group">
+
+                <label for="accountHolder">Account Holder:</label>
+                <input type="text" id="accountHolder" name="accountHolder" required>
+            </div>
+            <div class="form-group">
+                <label>Account Type:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="accountType" value="Savings" checked> Savings</label>
+                    <label><input type="radio" name="accountType" value="Checking"> Checking</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="chequeBookType">Cheque Book Type:</label>
+                <select id="chequeBookType" name="chequeBookType">
+                    <option value="Regular">Regular</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dateOfApply">Date of Apply:</label>
+                <input type="date" id="dateOfApply" name="dateOfApply" required>
+            </div>
+            <div class="form-group">
+                <label for="termsAndConditions">
+                    <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+                    I agree to the Terms and Conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature:</label>
+                <input type="file" id="signature" name="signature" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="button">Submit</button>
+    </div>
+</body>
+</html>
