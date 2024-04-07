@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="row">
+        <!-- Large screens: All logos in the same row -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <img src="resources/insurance.jpg" class="img-fluid" alt="Logo">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <img src="resources/loans.jpg" class="img-fluid" alt="Logo">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <img src="resources/logo.jpg" class="img-fluid" alt="Logo">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <img src="resources/savings.jpg" class="img-fluid" alt="Logo">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Medium screens: 2x2 grid -->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <img src="resources/insurance.jpg" class="img-fluid" alt="Logo">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <img src="resources/loans.jpg" class="img-fluid" alt="Logo">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <img src="resources/logo.jpg" class="img-fluid" alt="Logo">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <img src="resources/savings.jpg" class="img-fluid" alt="Logo">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Small screens: Each logo in its own row -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+            <img class="img-fluid" src="resources/loans.jpg" alt="savings">
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+            <img class="img-fluid" src="resources/savings.jpg" alt="creditCard">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
