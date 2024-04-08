@@ -4,7 +4,6 @@ import com.mybank.dao.insurance.exceptions.InsuranceAvailableException;
 import com.mybank.dao.insurance.remotes.InsuranceAvailableDbRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;

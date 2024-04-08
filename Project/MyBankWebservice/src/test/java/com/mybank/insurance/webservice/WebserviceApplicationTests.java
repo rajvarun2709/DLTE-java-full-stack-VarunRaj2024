@@ -12,13 +12,11 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import services.insurance.CallAllInsuranceAvailableRequest;
 import services.insurance.CallAllInsuranceAvailableResponse;
 import services.insurance.ServiceStatus;
-
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.doThrow;
@@ -81,25 +79,3 @@ public class WebserviceApplicationTests {
         assertEquals(1, response.getInsurance().size());//fail
     }
 }
-//    @Test
-//    public void testListLoans_SQLException() throws SQLException {
-//        // Arrange
-//        CallAllInsuranceAvailableRequest request = new CallAllInsuranceAvailableRequest();
-//        ServiceStatus expectedServiceStatus = new ServiceStatus();
-//        expectedServiceStatus.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-//        expectedServiceStatus.setMessage("Database error");
-//
-//        doThrow(SQLException.class).when(repository).callAllInsuranceAvailable();
-//
-//        // Act
-//        CallAllInsuranceAvailableResponse response = endpoint.listInsurance(request);
-//
-//        // Assert
-//        assertNotNull(response);
-////        assertNull(response);//fail
-//        assertEquals(expectedServiceStatus.getStatus(), response.getServiceStatus().getStatus());
-////        assertEquals(expectedServiceStatus.getMessage(), response.getServiceStatus().getMessage());//fail
-////        assertFalse(response.getInsurance().isEmpty());//fail
-//    }
-//
-//}

@@ -561,3 +561,17 @@ Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceA
 2024-04-08 14:17:30 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 2.933 seconds (JVM running for 4.026)
 2024-04-08 14:17:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-04-08 14:17:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-08 15:26:51 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 16724 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
+2024-04-08 15:26:51 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-04-08 15:26:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-08 15:26:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-04-08 15:26:53 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$407fe353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-08 15:26:53 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6208f3d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-08 15:26:53 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-08 15:26:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-08 15:26:54 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-04-08 15:26:54 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2024-04-08 15:26:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-08 15:26:55 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.78 seconds (JVM running for 5.587)
+2024-04-08 15:26:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-08 15:26:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
