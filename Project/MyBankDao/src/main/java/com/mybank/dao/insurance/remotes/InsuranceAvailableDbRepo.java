@@ -1,20 +1,21 @@
 package com.mybank.dao.insurance.remotes;
 
-import com.mybank.dao.insurance.entity.InsuranceAvailable;
-import com.mybank.dao.insurance.exceptions.InsuranceAvailableException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.*;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
-import org.springframework.stereotype.Service;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.SQLSyntaxErrorException;
-import java.util.List;
-import java.util.ResourceBundle;
+        import com.mybank.dao.insurance.entity.InsuranceAvailable;
+        import com.mybank.dao.insurance.exceptions.CustomerException;
+        import com.mybank.dao.insurance.exceptions.InsuranceAvailableException;
+        import com.mybank.dao.insurance.exceptions.InsuranceNotFoundException;
+        import oracle.jdbc.OracleTypes;
+        import org.slf4j.Logger;
+        import org.slf4j.LoggerFactory;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import org.springframework.dao.*;
+        import org.springframework.jdbc.UncategorizedSQLException;
+        import org.springframework.jdbc.core.*;
+        import org.springframework.security.core.Authentication;
+        import org.springframework.security.core.context.SecurityContextHolder;
+        import org.springframework.stereotype.Service;
+        import java.sql.*;
+        import java.util.*;
 
 /* This service retrieves all the record from the oracle db and returns the list of the records.
  This service also throws the required exception if encountered.*/
@@ -24,6 +25,9 @@ public class InsuranceAvailableDbRepo implements InsuranceAvailableRepository {
     ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
 
     Logger logger = LoggerFactory.getLogger(InsuranceAvailableDbRepo.class);
+
+    @Autowired
+    CustomerRepository customerRepository;
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -46,8 +50,62 @@ public class InsuranceAvailableDbRepo implements InsuranceAvailableRepository {
         return insuranceList;
     }
 
-    public class CardMapper implements RowMapper<InsuranceAvailable> {
+//    @Override
+//    public Optional<InsuranceAvailable> apiFindById(int insuranceId){
+//        return Optional.ofNullable(jdbcTemplate.queryForObject("select * from MYBANK_APP_INSURANCEAVAILABLE where INSURANCE_ID=?",
+//                new Object[]{insuranceId},
+//                new BeanPropertyRowMapper<>(InsuranceAvailable.class)
+//        ));
+//    }
 
+
+    public Optional<InsuranceAvailable> apiFindById(int insuranceId) throws SQLException {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if(customerRepository.findByUserName(authentication.getName()).getCustomerStatus().equalsIgnoreCase("InActive")){
+            throw new CustomerException("Customer Status InActive");
+        }
+        CallableStatementCreator creator = con -> {
+            CallableStatement statement = con.prepareCall("{call get_insurance_data(?, ?)}");
+            statement.setLong(1, insuranceId);
+            statement.registerOutParameter(2, oracle.jdbc.OracleTypes.CURSOR);
+            return statement;
+        };
+
+        try {
+            Map<String, Object> returnedExecution = jdbcTemplate.call(creator, Arrays.asList(
+                    new SqlParameter[]{
+                            new SqlParameter(Types.NUMERIC),
+                            new SqlOutParameter("insuranceData", OracleTypes.CURSOR)
+                    }
+            ));
+
+            // Retrieving the cursor result
+            ArrayList<InsuranceAvailable> availables = (ArrayList<InsuranceAvailable>) returnedExecution.get("insuranceData");
+
+            // Processing the result set, assuming InsuranceAvailable has corresponding constructor and setter methods
+
+//            return Optional.ofNullable(availables.get(0));
+            if (availables != null && !availables.isEmpty()) {
+                // Processing the result set, assuming InsuranceAvailable has corresponding constructor and setter methods
+                return Optional.ofNullable(availables.get(0));
+            } else {
+                // If availables is null or empty, return Optional.empty()
+                return Optional.empty();
+            }
+
+        } catch (UncategorizedSQLException e) {
+            if (e.getSQLException().getErrorCode()==20001) {
+                logger.error(resourceBundle.getString("insurance.20001.error") + e.getSQLException().getMessage());
+                throw new InsuranceNotFoundException(resourceBundle.getString("insurance.20001.error") );
+            }
+            else {
+                logger.warn(resourceBundle.getString("insurance.error") + e.toString());
+                throw new SQLException(resourceBundle.getString("insurance.error") );
+            }
+        }
+    }
+
+    public class CardMapper implements RowMapper<InsuranceAvailable> {
         @Override
         public InsuranceAvailable mapRow(ResultSet rs, int rowNum) throws SQLException {
             InsuranceAvailable available = new InsuranceAvailable();
@@ -59,4 +117,6 @@ public class InsuranceAvailableDbRepo implements InsuranceAvailableRepository {
             return available;
         }
     }
+
+
 }

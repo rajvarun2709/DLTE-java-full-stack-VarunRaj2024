@@ -1,577 +1,259 @@
-2024-04-08 08:40:43 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h56m51s738ms190µs300ns).
-2024-04-08 09:57:28 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-04-08 09:57:28 [Thread-12] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 09:57:28 [Thread-12] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'messageDispatcherServlet'
-2024-04-08 09:57:28 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 09:57:28 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 09:57:29 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 13128 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 09:57:29 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$892027de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$aaa93863] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 09:57:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 09:57:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 09:57:29 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 482 ms
-2024-04-08 09:57:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2024-04-08 09:57:29 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 09:57:29 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 09:57:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
-2024-04-08 09:57:29 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 0.767 seconds (JVM running for 240254.125)
-2024-04-08 09:57:29 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2024-04-08 09:57:30 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 29812 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 09:57:30 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 09:57:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 09:57:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
-2024-04-08 09:57:32 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$b9ea98bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 09:57:32 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db73a944] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 09:57:32 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 09:57:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 09:57:33 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 09:57:33 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 09:57:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 09:57:33 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.743 seconds (JVM running for 5.59)
-2024-04-08 09:57:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 09:57:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 10:06:08 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 21792 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:06:08 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:06:08 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:06:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:06:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$38e467c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5a6d784a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:06:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:06:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:06:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1029 ms
-2024-04-08 10:06:09 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:06:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:06:09 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:06:09 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:09:29 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 14572 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:09:29 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$144747e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$35d0586a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:09:29 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:09:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:09:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:09:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:09:30 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:09:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 941 ms
-2024-04-08 10:09:30 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:09:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:09:30 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:09:30 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:09:56 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 2376 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:09:56 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$1c817e9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3e0a8f1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:09:56 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:09:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:09:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:09:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:09:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:09:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1048 ms
-2024-04-08 10:09:57 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:09:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:09:57 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:09:57 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:12:12 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 7556 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:12:12 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:12:12 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:12:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:12:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:12:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:12:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:12:13 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$38e467c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:12:13 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5a6d784a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:12:13 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:12:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:12:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:12:13 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:12:13 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:12:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1033 ms
-2024-04-08 10:12:13 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:12:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:12:13 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:12:13 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:14:44 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 24792 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:14:44 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:14:44 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:14:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:14:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:14:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:14:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:14:45 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$622b039] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:14:45 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$27abc0be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:14:45 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:14:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:14:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:14:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:14:45 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:14:45 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1058 ms
-2024-04-08 10:14:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 10:14:45 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 10:14:45 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 10:14:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 10:14:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-04-08 10:14:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
-2024-04-08 10:14:46 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 2.02 seconds (JVM running for 2.652)
-2024-04-08 10:15:00 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-2024-04-08 10:15:00 [http-nio-8082-exec-1] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
-2024-04-08 10:15:00 [http-nio-8082-exec-1] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-2024-04-08 10:15:00 [http-nio-8082-exec-1] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 15 ms
-2024-04-08 10:17:36 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 30924 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:17:36 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$7dc3553d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9f4c65c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:17:36 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:17:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:17:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:17:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:17:37 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:17:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 948 ms
-2024-04-08 10:17:37 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:17:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:17:37 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:17:37 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:22:07 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 14308 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:22:07 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:22:07 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:22:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:22:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$11747472] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$32fd84f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:22:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:22:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:22:08 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 944 ms
-2024-04-08 10:22:08 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:22:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:22:08 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:22:08 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:22:31 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 25716 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:22:31 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:22:31 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:22:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:22:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:22:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:22:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:22:31 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$4c277280] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:22:31 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6db08305] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:22:32 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:22:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:22:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:22:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:22:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:22:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 978 ms
-2024-04-08 10:22:32 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:22:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:22:32 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:22:32 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:23:33 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 30344 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:23:33 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:23:33 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:23:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:23:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:23:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:23:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:23:34 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$68470e24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:23:34 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$89d01ea9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:23:34 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:23:34 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:23:34 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:23:34 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:23:34 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:23:34 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1046 ms
-2024-04-08 10:23:34 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'insuranceAvailableEndpoint': Unsatisfied dependency expressed through field 'availableDbRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2024-04-08 10:23:34 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-04-08 10:23:35 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-04-08 10:23:35 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field availableDbRepo in com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint required a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository' in your configuration.
-
-2024-04-08 10:26:52 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 13872 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 10:26:52 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 10:26:52 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 10:26:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 10:26:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 10:26:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 10:26:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
-2024-04-08 10:26:53 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$e15426f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:26:53 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2dd377b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 10:26:53 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 10:26:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 10:26:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 10:26:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 10:26:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 10:26:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 966 ms
-2024-04-08 10:26:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 10:26:53 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 10:26:53 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 10:26:54 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 10:26:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-04-08 10:26:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
-2024-04-08 10:26:54 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 1.906 seconds (JVM running for 2.567)
-2024-04-08 10:27:05 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-2024-04-08 10:27:05 [http-nio-8082-exec-1] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
-2024-04-08 10:27:05 [http-nio-8082-exec-1] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-2024-04-08 10:27:05 [http-nio-8082-exec-1] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 0 ms
-2024-04-08 11:40:54 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 32712 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 11:40:54 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 11:40:55 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-2024-04-08 11:40:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-08 11:40:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-08 11:40:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 11:40:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2024-04-08 11:40:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$b2e2306a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 11:40:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d46b40ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 11:40:56 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 11:40:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
-2024-04-08 11:40:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-08 11:40:56 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
-2024-04-08 11:40:56 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-04-08 11:40:56 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1397 ms
-2024-04-08 11:40:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 11:40:56 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 11:40:56 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 11:40:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 11:40:57 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-04-08 11:40:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
-2024-04-08 11:40:57 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 2.502 seconds (JVM running for 3.264)
-2024-04-08 11:41:21 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 31628 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 11:41:21 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 11:41:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 11:41:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-2024-04-08 11:41:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$d7ed8bcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 11:41:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f9769c52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 11:41:22 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 11:41:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 11:41:23 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 11:41:23 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 11:41:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 11:41:23 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.177 seconds (JVM running for 4.747)
-2024-04-08 11:41:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 11:41:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 12:06:22 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 13580 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 12:06:22 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 12:06:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 12:06:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-2024-04-08 12:06:23 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$739f7f1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:06:23 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$95288fa0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:06:23 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 12:06:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 12:06:24 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 12:06:24 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 12:06:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 12:06:25 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.083 seconds (JVM running for 4.698)
-2024-04-08 12:06:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 12:06:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 12:11:41 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 6252 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 12:11:41 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 12:11:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 12:11:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2024-04-08 12:11:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$9fcdad4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:11:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c156bdd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:11:43 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 12:11:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 12:11:44 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 12:11:44 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 12:11:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 12:11:44 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.058 seconds (JVM running for 4.123)
-2024-04-08 12:11:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 12:11:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 12:13:56 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 19072 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 12:13:56 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 12:13:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 12:13:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
-2024-04-08 12:13:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$b9ea98bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:13:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db73a944] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:13:58 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 12:13:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 12:13:58 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 12:13:59 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 12:13:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 12:13:59 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 2.975 seconds (JVM running for 4.511)
-2024-04-08 12:13:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 12:13:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 12:14:16 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 5220 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 12:14:16 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 12:14:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 12:14:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
-2024-04-08 12:14:18 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$b9baf5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:14:18 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2d24bfe0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:14:18 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 12:14:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 12:14:19 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 12:14:19 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 12:14:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 12:14:19 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.009 seconds (JVM running for 4.102)
-2024-04-08 12:14:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 12:14:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 12:23:13 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 9032 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 12:23:13 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 12:23:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 12:23:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2024-04-08 12:23:15 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$b91c13bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:23:15 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$daa52440] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:23:15 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 12:23:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 12:23:16 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 12:23:16 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 12:23:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 12:23:16 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.258 seconds (JVM running for 4.881)
-2024-04-08 12:23:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 12:23:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 12:30:09 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 19428 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 12:30:09 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 12:30:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 12:30:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
-2024-04-08 12:30:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$b9ea98bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:30:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$db73a944] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 12:30:10 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 12:30:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 12:30:11 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 12:30:11 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 12:30:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 12:30:11 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 2.914 seconds (JVM running for 4.414)
-2024-04-08 12:30:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 12:30:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 12:32:18 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-2024-04-08 12:32:18 [http-nio-8082-exec-1] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
-2024-04-08 12:32:18 [http-nio-8082-exec-1] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-2024-04-08 12:32:18 [http-nio-8082-exec-1] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 17 ms
-2024-04-08 13:49:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m17s909ms850µs400ns).
-2024-04-08 13:52:02 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 5820 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 13:52:02 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 13:52:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 13:52:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-2024-04-08 13:52:03 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$bcefe6bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 13:52:03 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$de78f740] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 13:52:03 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 13:52:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 13:52:04 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 13:52:04 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 13:52:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 13:52:04 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.059 seconds (JVM running for 4.753)
-2024-04-08 13:52:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 13:52:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 13:54:00 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 9032 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 13:54:00 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 13:54:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 13:54:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
-2024-04-08 13:54:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$cd2cb0a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 13:54:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eeb5c12c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 13:54:02 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 13:54:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 13:54:03 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 13:54:03 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 13:54:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 13:54:03 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 4.019 seconds (JVM running for 5.191)
-2024-04-08 13:54:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 13:54:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 14:17:27 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 23676 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 14:17:27 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 14:17:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 14:17:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
-2024-04-08 14:17:28 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$744f05e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 14:17:28 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$95d81665] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 14:17:28 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 14:17:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 14:17:29 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 14:17:29 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 14:17:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 14:17:30 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 2.933 seconds (JVM running for 4.026)
-2024-04-08 14:17:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 14:17:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-04-08 15:26:51 [main] INFO  c.m.i.w.WebserviceApplicationTests - Starting WebserviceApplicationTests using Java 1.8.0_292 on WPF45CTQ6 with PID 16724 (started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
-2024-04-08 15:26:51 [main] INFO  c.m.i.w.WebserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2024-04-08 15:26:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-08 15:26:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
-2024-04-08 15:26:53 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$407fe353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 15:26:53 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6208f3d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-08 15:26:53 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-08 15:26:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-08 15:26:54 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-08 15:26:54 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-08 15:26:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-08 15:26:55 [main] INFO  c.m.i.w.WebserviceApplicationTests - Started WebserviceApplicationTests in 3.78 seconds (JVM running for 5.587)
-2024-04-08 15:26:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-08 15:26:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-02 07:42:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h41m59s221ms359µs300ns).
+2024-05-02 07:43:20 [http-nio-8084-exec-8] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 07:43:20 [http-nio-8084-exec-8] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 07:43:26 [http-nio-8084-exec-10] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 08:30:07 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m20s759ms520µs200ns).
+2024-05-02 08:32:05 [http-nio-8084-exec-5] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 08:32:05 [http-nio-8084-exec-5] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 08:32:07 [http-nio-8084-exec-10] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 08:32:27 [http-nio-8084-exec-2] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 08:33:14 [http-nio-8084-exec-10] ERROR c.m.d.i.r.InsuranceAvailableDbRepo - Insurance Id InvlaidORA-20001: An unexpected error occurred: ORA-20001: No data found
+ORA-06512: at "DEMO.GET_INSURANCE_DATA", line 21
+ORA-06512: at line 1
+
+2024-05-02 08:33:14 [http-nio-8084-exec-10] ERROR c.m.i.w.r.c.InsuranceAvailableController - Insurance Id Invlaidcom.mybank.dao.insurance.exceptions.InsuranceNotFoundException: Insurance Id Invlaid
+2024-05-02 08:37:21 [http-nio-8084-exec-8] ERROR c.m.d.i.r.InsuranceAvailableDbRepo - Insurance Id InvlaidORA-20001: An unexpected error occurred: ORA-20001: No data found
+ORA-06512: at "DEMO.GET_INSURANCE_DATA", line 21
+ORA-06512: at line 1
+
+2024-05-02 08:37:21 [http-nio-8084-exec-8] ERROR c.m.i.w.r.c.InsuranceAvailableController - Insurance Id Invlaidcom.mybank.dao.insurance.exceptions.InsuranceNotFoundException: Insurance Id Invlaid
+2024-05-02 08:37:26 [http-nio-8084-exec-3] ERROR c.m.d.i.r.InsuranceAvailableDbRepo - Insurance Id InvlaidORA-20001: An unexpected error occurred: ORA-20001: No data found
+ORA-06512: at "DEMO.GET_INSURANCE_DATA", line 21
+ORA-06512: at line 1
+
+2024-05-02 08:37:26 [http-nio-8084-exec-3] ERROR c.m.i.w.r.c.InsuranceAvailableController - Insurance Id Invlaidcom.mybank.dao.insurance.exceptions.InsuranceNotFoundException: Insurance Id Invlaid
+2024-05-02 08:37:28 [http-nio-8084-exec-4] ERROR c.m.d.i.r.InsuranceAvailableDbRepo - Insurance Id InvlaidORA-20001: An unexpected error occurred: ORA-20001: No data found
+ORA-06512: at "DEMO.GET_INSURANCE_DATA", line 21
+ORA-06512: at line 1
+
+2024-05-02 08:37:28 [http-nio-8084-exec-4] ERROR c.m.i.w.r.c.InsuranceAvailableController - Insurance Id Invlaidcom.mybank.dao.insurance.exceptions.InsuranceNotFoundException: Insurance Id Invlaid
+2024-05-02 08:37:29 [http-nio-8084-exec-6] ERROR c.m.d.i.r.InsuranceAvailableDbRepo - Insurance Id InvlaidORA-20001: An unexpected error occurred: ORA-20001: No data found
+ORA-06512: at "DEMO.GET_INSURANCE_DATA", line 21
+ORA-06512: at line 1
+
+2024-05-02 08:37:29 [http-nio-8084-exec-6] ERROR c.m.i.w.r.c.InsuranceAvailableController - Insurance Id Invlaidcom.mybank.dao.insurance.exceptions.InsuranceNotFoundException: Insurance Id Invlaid
+2024-05-02 08:55:21 [http-nio-8084-exec-3] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 08:55:28 [http-nio-8084-exec-2] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 08:56:22 [http-nio-8084-exec-1] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 08:56:31 [http-nio-8084-exec-10] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 08:56:42 [http-nio-8084-exec-7] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:02:51 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 20384 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
+2024-05-02 09:02:51 [restartedMain] DEBUG c.m.i.w.WebserviceApplication - Running with Spring Boot v2.7.10, Spring v5.3.26
+2024-05-02 09:02:51 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-02 09:02:51 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-05-02 09:02:51 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-02 09:02:51 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-02 09:02:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-02 09:02:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-05-02 09:02:52 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$ca5a0036] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:02:52 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ebe310bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:02:52 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-05-02 09:02:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2024-05-02 09:02:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-02 09:02:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2024-05-02 09:02:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-02 09:02:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1448 ms
+2024-05-02 09:02:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7fcc588, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41258708, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ff0cee0, org.springframework.security.web.header.HeaderWriterFilter@1decd1a1, org.springframework.web.filter.CorsFilter@3dca2230, org.springframework.security.web.authentication.logout.LogoutFilter@7527f2a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@dd81aa7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2c532480, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f4c3466, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11df936e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3795d2ea, org.springframework.security.web.session.SessionManagementFilter@644aeb93, org.springframework.security.web.access.ExceptionTranslationFilter@775474ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@488813a6]
+2024-05-02 09:02:53 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-05-02 09:02:54 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-02 09:02:54 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-02 09:02:54 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2024-05-02 09:02:54 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-02 09:02:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-02 09:02:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2024-05-02 09:02:54 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 3.683 seconds (JVM running for 4.677)
+2024-05-02 09:02:58 [http-nio-8084-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-02 09:02:58 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-02 09:02:58 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-02 09:03:05 [http-nio-8084-exec-7] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 09:03:05 [http-nio-8084-exec-7] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 09:03:08 [http-nio-8084-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-05-02 09:03:08 [http-nio-8084-exec-7] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-05-02 09:03:08 [http-nio-8084-exec-7] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-05-02 09:03:08 [http-nio-8084-exec-7] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 19 ms
+2024-05-02 09:03:08 [http-nio-8084-exec-7] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:13:42 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 28876 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
+2024-05-02 09:13:42 [restartedMain] DEBUG c.m.i.w.WebserviceApplication - Running with Spring Boot v2.7.10, Spring v5.3.26
+2024-05-02 09:13:42 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-02 09:13:42 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-05-02 09:13:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-02 09:13:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$c0c57316] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e24e839b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2024-05-02 09:13:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-02 09:13:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2024-05-02 09:13:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1282 ms
+2024-05-02 09:13:43 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bb56b1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a562855, org.springframework.security.web.context.SecurityContextPersistenceFilter@504cca34, org.springframework.security.web.header.HeaderWriterFilter@b331a5c, org.springframework.web.filter.CorsFilter@398b5160, org.springframework.security.web.authentication.logout.LogoutFilter@374490ee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d2727fb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7b4150b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66b0fd78, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@655f1c8a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a08c5cc, org.springframework.security.web.session.SessionManagementFilter@3430f58d, org.springframework.security.web.access.ExceptionTranslationFilter@52e5e164, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cdb207b]
+2024-05-02 09:13:44 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-05-02 09:13:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-02 09:13:44 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-02 09:13:44 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2024-05-02 09:13:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-02 09:13:44 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-02 09:13:44 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2024-05-02 09:13:44 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 2.849 seconds (JVM running for 3.717)
+2024-05-02 09:13:48 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-02 09:13:48 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-02 09:13:48 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-02 09:13:55 [http-nio-8084-exec-5] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 09:13:55 [http-nio-8084-exec-5] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 09:13:57 [http-nio-8084-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-05-02 09:13:57 [http-nio-8084-exec-5] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-05-02 09:13:57 [http-nio-8084-exec-5] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-05-02 09:13:57 [http-nio-8084-exec-5] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 37 ms
+2024-05-02 09:13:58 [http-nio-8084-exec-5] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:22:14 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 25064 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
+2024-05-02 09:22:14 [restartedMain] DEBUG c.m.i.w.WebserviceApplication - Running with Spring Boot v2.7.10, Spring v5.3.26
+2024-05-02 09:22:14 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$79079e48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9a90aecd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:22:14 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-05-02 09:22:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2024-05-02 09:22:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-02 09:22:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2024-05-02 09:22:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-02 09:22:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1148 ms
+2024-05-02 09:22:15 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50fdec23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59f8bbc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@13b93c0f, org.springframework.security.web.header.HeaderWriterFilter@6c0484bc, org.springframework.web.filter.CorsFilter@3579e2e9, org.springframework.security.web.authentication.logout.LogoutFilter@55027985, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@398b5160, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@27bff05b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cf9e850, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e67312f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6617360d, org.springframework.security.web.session.SessionManagementFilter@52dd95a9, org.springframework.security.web.access.ExceptionTranslationFilter@4fdc17d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28f146f8]
+2024-05-02 09:22:15 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-05-02 09:22:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-02 09:22:16 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-02 09:22:16 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2024-05-02 09:22:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-02 09:22:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-02 09:22:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2024-05-02 09:22:16 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 2.676 seconds (JVM running for 3.387)
+2024-05-02 09:22:22 [http-nio-8084-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-02 09:22:22 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-02 09:22:22 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-02 09:22:33 [http-nio-8084-exec-5] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 09:22:33 [http-nio-8084-exec-5] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 09:22:48 [http-nio-8084-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-05-02 09:22:48 [http-nio-8084-exec-5] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-05-02 09:22:48 [http-nio-8084-exec-5] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-05-02 09:22:48 [http-nio-8084-exec-5] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 18 ms
+2024-05-02 09:22:48 [http-nio-8084-exec-5] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:25:15 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 7832 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
+2024-05-02 09:25:15 [restartedMain] DEBUG c.m.i.w.WebserviceApplication - Running with Spring Boot v2.7.10, Spring v5.3.26
+2024-05-02 09:25:15 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-02 09:25:16 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-05-02 09:25:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-02 09:25:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-02 09:25:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-02 09:25:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2024-05-02 09:25:17 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$4823f317] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:25:17 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$69ad039c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:25:17 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-05-02 09:25:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2024-05-02 09:25:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-02 09:25:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2024-05-02 09:25:17 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-02 09:25:17 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1625 ms
+2024-05-02 09:25:17 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21314649, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6178b30, org.springframework.security.web.context.SecurityContextPersistenceFilter@49b35d07, org.springframework.security.web.header.HeaderWriterFilter@4c9f6d7, org.springframework.web.filter.CorsFilter@592431b9, org.springframework.security.web.authentication.logout.LogoutFilter@68b745e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a09c029, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@31c77cb1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5339ce67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39e98a7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7302c464, org.springframework.security.web.session.SessionManagementFilter@5e1b845b, org.springframework.security.web.access.ExceptionTranslationFilter@530aeb9a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45f90202]
+2024-05-02 09:25:18 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-05-02 09:25:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-02 09:25:18 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-02 09:25:18 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2024-05-02 09:25:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-02 09:25:18 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-02 09:25:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2024-05-02 09:25:18 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 3.216 seconds (JVM running for 4.037)
+2024-05-02 09:25:19 [http-nio-8084-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-02 09:25:19 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-02 09:25:19 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-02 09:25:25 [http-nio-8084-exec-6] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 09:25:25 [http-nio-8084-exec-6] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 09:25:27 [http-nio-8084-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-05-02 09:25:27 [http-nio-8084-exec-4] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-05-02 09:25:27 [http-nio-8084-exec-4] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-05-02 09:25:27 [http-nio-8084-exec-4] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 25 ms
+2024-05-02 09:25:27 [http-nio-8084-exec-4] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:27:15 [http-nio-8084-exec-9] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:27:22 [http-nio-8084-exec-10] ERROR c.m.d.i.r.InsuranceAvailableDbRepo - Insurance Id InvlaidORA-20001: An unexpected error occurred: ORA-20001: No data found
+ORA-06512: at "DEMO.GET_INSURANCE_DATA", line 21
+ORA-06512: at line 1
+
+2024-05-02 09:27:22 [http-nio-8084-exec-10] ERROR c.m.i.w.r.c.InsuranceAvailableController - Insurance Id Invlaidcom.mybank.dao.insurance.exceptions.InsuranceNotFoundException: Insurance Id Invlaid
+2024-05-02 09:48:30 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 4724 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
+2024-05-02 09:48:30 [restartedMain] DEBUG c.m.i.w.WebserviceApplication - Running with Spring Boot v2.7.10, Spring v5.3.26
+2024-05-02 09:48:30 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$e3500596] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4d9161b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:48:31 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-05-02 09:48:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2024-05-02 09:48:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-02 09:48:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2024-05-02 09:48:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-02 09:48:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1140 ms
+2024-05-02 09:48:32 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1703aac1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fcc588, org.springframework.security.web.context.SecurityContextPersistenceFilter@646a6a15, org.springframework.security.web.header.HeaderWriterFilter@49493d22, org.springframework.web.filter.CorsFilter@41258708, org.springframework.security.web.authentication.logout.LogoutFilter@2b0fccaf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d167cf5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@774cb1cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c69500b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8c1cb58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dca2230, org.springframework.security.web.session.SessionManagementFilter@3b20702, org.springframework.security.web.access.ExceptionTranslationFilter@ac353bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e1d15c9]
+2024-05-02 09:48:32 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-05-02 09:48:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-02 09:48:32 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-02 09:48:33 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2024-05-02 09:48:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-02 09:48:33 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-02 09:48:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2024-05-02 09:48:33 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 2.6 seconds (JVM running for 3.368)
+2024-05-02 09:48:36 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-02 09:48:36 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-02 09:48:36 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-02 09:48:43 [http-nio-8084-exec-2] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 09:48:43 [http-nio-8084-exec-2] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 09:48:44 [http-nio-8084-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-05-02 09:48:44 [http-nio-8084-exec-2] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-05-02 09:48:44 [http-nio-8084-exec-2] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-05-02 09:48:44 [http-nio-8084-exec-2] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 24 ms
+2024-05-02 09:48:44 [http-nio-8084-exec-2] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:49:22 [http-nio-8084-exec-8] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:54:02 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Starting WebserviceApplication using Java 1.8.0_292 on WPF45CTQ6 with PID 20032 (C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice\target\classes started by xxrajjjv in C:\Users\xxrajjjv\Desktop\DLTE-java-full-stack-VarunRaj2024\Project\MyBankWebservice)
+2024-05-02 09:54:02 [restartedMain] DEBUG c.m.i.w.WebserviceApplication - Running with Spring Boot v2.7.10, Spring v5.3.26
+2024-05-02 09:54:02 [restartedMain] INFO  c.m.i.w.WebserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-02 09:54:02 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\xxrajjjv\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxrajjjv/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2024-05-02 09:54:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-02 09:54:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-02 09:54:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-02 09:54:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-05-02 09:54:03 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'soapServiceConfiguration' of type [com.mybank.insurance.webservice.soap.config.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$37b220d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:54:03 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$593b3158] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-02 09:54:03 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-05-02 09:54:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2024-05-02 09:54:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-02 09:54:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2024-05-02 09:54:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-02 09:54:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1228 ms
+2024-05-02 09:54:04 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@9c1c679, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15fb5428, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ee6686a, org.springframework.security.web.header.HeaderWriterFilter@66b0fd78, org.springframework.web.filter.CorsFilter@7cb8e27b, org.springframework.security.web.authentication.logout.LogoutFilter@57c84816, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28f146f8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@55027985, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@434949b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@713c046e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b4759a, org.springframework.security.web.session.SessionManagementFilter@655f1c8a, org.springframework.security.web.access.ExceptionTranslationFilter@3430f58d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51889c1b]
+2024-05-02 09:54:04 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-05-02 09:54:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-02 09:54:04 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-02 09:54:05 [restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2024-05-02 09:54:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-02 09:54:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-02 09:54:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2024-05-02 09:54:05 [restartedMain] INFO  c.m.i.w.WebserviceApplication - Started WebserviceApplication in 2.828 seconds (JVM running for 3.698)
+2024-05-02 09:54:09 [http-nio-8084-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-02 09:54:09 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-02 09:54:09 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-02 09:54:17 [http-nio-8084-exec-5] WARN  c.m.i.w.s.l.CustomerSuccessHandler - Active
+2024-05-02 09:54:17 [http-nio-8084-exec-5] TRACE c.m.i.w.s.l.CustomerSuccessHandler - Using default url /ui/dash
+2024-05-02 09:54:20 [http-nio-8084-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-05-02 09:54:20 [http-nio-8084-exec-5] INFO  o.s.w.t.h.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-05-02 09:54:20 [http-nio-8084-exec-5] INFO  o.s.w.s.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-05-02 09:54:20 [http-nio-8084-exec-5] INFO  o.s.w.t.h.MessageDispatcherServlet - Completed initialization in 18 ms
+2024-05-02 09:54:20 [http-nio-8084-exec-5] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:54:45 [http-nio-8084-exec-7] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:55:25 [http-nio-8084-exec-1] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200
+2024-05-02 09:55:37 [http-nio-8084-exec-6] DEBUG c.m.i.w.s.e.InsuranceAvailableEndpoint - insurance is available200

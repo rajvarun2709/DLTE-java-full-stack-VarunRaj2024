@@ -1,5 +1,4 @@
 package com.mybank.dao.insurance.entity;
-
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 

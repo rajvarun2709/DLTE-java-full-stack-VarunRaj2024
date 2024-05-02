@@ -4,7 +4,6 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 
 public class InsuranceAvailed {
-
     @NotNull(message = "{availed.insuranceAvailedId.null}")
     @Digits(integer = 8, fraction = 0, message = "{user.customerId.null}")
     private Integer insuranceAvailedId;

@@ -1,7 +1,7 @@
 package com.mybank.insurance.webservice.soap.endpoint;
 import com.mybank.dao.insurance.entity.InsuranceAvailable;
 import com.mybank.dao.insurance.exceptions.InsuranceAvailableException;
-import com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository;
+import com.mybank.dao.insurance.remotes.InsuranceAvailableRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -14,7 +14,6 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import services.insurance.CallAllInsuranceAvailableRequest;
 import services.insurance.CallAllInsuranceAvailableResponse;
 import services.insurance.ServiceStatus;
-
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -42,14 +41,12 @@ public class InsuranceAvailableEndpoint {
         ServiceStatus serviceStatus = new ServiceStatus();
         try {
             List<InsuranceAvailable> insuranceDao = availableDbRepo.callAllInsuranceAvailable();
-
             List<services.insurance.InsuranceAvailable> actualInsurance = new ArrayList<>();
             insuranceDao.forEach(each -> {
                 services.insurance.InsuranceAvailable insuranceAvailable = new services.insurance.InsuranceAvailable();
                 BeanUtils.copyProperties(each, insuranceAvailable);
                 actualInsurance.add(insuranceAvailable);
             });
-
             //Here the service status is ok when the data is successfully retrived
             serviceStatus.setStatus(HttpServletResponse.SC_OK);
             serviceStatus.setMessage(resourceBundle.getString("soap.status.ok"));

@@ -1,7 +1,6 @@
 package com.mybank.insurance.webservice;//package com.mybank.insurance.webservice;
-
 import com.mybank.dao.insurance.entity.InsuranceAvailable;
-import com.mybank.dao.insurance.exceptions.InsuranceAvailableRepository;
+import com.mybank.dao.insurance.remotes.InsuranceAvailableRepository;
 import com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,8 +16,8 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.when;
 
@@ -53,9 +52,9 @@ public class WebserviceApplicationTests {
         assertNotNull(response);
         assertEquals(2, response.getInsurance().size());
         assertEquals(expectedServiceStatus.getStatus(), response.getServiceStatus().getStatus());
-//        assertEquals(expectedServiceStatus.getMessage(), response.getServiceStatus().getMessage());// fail
+        assertNotEquals(expectedServiceStatus.getMessage(), response.getServiceStatus().getMessage());// fail
         assertNotNull(response.getInsurance());
-//        assertEquals(1, response.getInsurance().size());//fail
+        assertNotEquals(1, response.getInsurance().size());//fail
     }
 
     @Test
@@ -75,7 +74,7 @@ public class WebserviceApplicationTests {
 
         CallAllInsuranceAvailableResponse response = endpoint.listInsurance(request);
 
-//        assertEquals(expectedServiceStatus.getMessage(), response.getServiceStatus().getMessage());// fail
-        assertEquals(1, response.getInsurance().size());//fail
+        assertNotEquals(expectedServiceStatus.getMessage(), response.getServiceStatus().getMessage());// fail
+        assertNotEquals(1, response.getInsurance().size());//fail
     }
 }

@@ -1,0 +1,16 @@
+com\mybank\insurance\webservice\security\configs\InsuranceSecurity.class
+services\insurance\CallAllInsuranceAvailableRequest.class
+com\mybank\insurance\webservice\security\controller\CustomerSignupAPI.class
+services\insurance\InsuranceAvailable.class
+com\mybank\insurance\webservice\rest\controller\InsuranceAvailableController.class
+com\mybank\insurance\webservice\ServletInitializer.class
+com\mybank\insurance\webservice\security\loginhandler\CustomerSuccessHandler.class
+com\mybank\insurance\webservice\WebserviceApplication.class
+services\insurance\ServiceStatus.class
+services\insurance\ObjectFactory.class
+com\mybank\insurance\webservice\soap\config\SoapServiceConfiguration.class
+com\mybank\insurance\webservice\soap\endpoint\InsuranceAvailableEndpoint.class
+services\insurance\CallAllInsuranceAvailableResponse.class
+com\mybank\insurance\webservice\rest\config\RestServiceConfiguration.class
+com\mybank\insurance\webservice\security\loginhandler\CustomerFailureHandler.class
+services\insurance\package-info.class
