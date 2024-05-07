@@ -28,7 +28,7 @@ public class InsuranceAvailableEndpoint {
 
     private final String url = "http://insurance.services";
     Logger logger = LoggerFactory.getLogger(InsuranceAvailableEndpoint.class);
-    ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
+    ResourceBundle resourceBundle = ResourceBundle.getBundle("app");
 
     @Autowired
     private InsuranceAvailableRepository availableDbRepo;

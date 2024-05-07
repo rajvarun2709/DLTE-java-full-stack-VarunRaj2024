@@ -1,6 +1,4 @@
 package com.mybank.insurance.webservice.mvc;
-
-
 import com.mybank.dao.insurance.entity.Customer;
 import com.mybank.dao.insurance.remotes.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +17,6 @@ public class InsuranceWebController {
 
     @Autowired
     CustomerRepository customerRepository;
-
 
     @GetMapping("/dash")
     public String dash(){
@@ -44,22 +41,15 @@ public class InsuranceWebController {
         return customer.getCustomerName();
     }
 
-    @GetMapping("/id")
-    @ResponseBody
-    public Integer customerId(){
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String name = authentication.getName();
-        Integer customerId = customerRepository.findByCustomerId(name);
-        return customerId;
-    }
-
-//    @GetMapping("/apply")
-//    public String save(){
-//        return "applyInsurance";
-//    }
 
     @GetMapping("/view")
     public String view(){
         return "viewInsurance";
     }
+
+    @GetMapping("/error")
+    public String errorPage() {
+        return "error";
+    }
+
 }

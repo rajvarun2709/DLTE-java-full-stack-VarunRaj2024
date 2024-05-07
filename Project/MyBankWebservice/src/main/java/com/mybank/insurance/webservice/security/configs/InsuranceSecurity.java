@@ -1,6 +1,4 @@
 package com.mybank.insurance.webservice.security.configs;
-
-
 import com.mybank.dao.insurance.remotes.CustomerDbRepo;
 import com.mybank.insurance.webservice.security.loginhandler.CustomerFailureHandler;
 import com.mybank.insurance.webservice.security.loginhandler.CustomerSuccessHandler;

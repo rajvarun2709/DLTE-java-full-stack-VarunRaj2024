@@ -23,7 +23,6 @@ public class SoapServiceConfiguration extends WsConfigurerAdapter {
         servlet.setApplicationContext(applicationContext);
         return new ServletRegistrationBean(servlet,"/insurancerepo/*");
     }
-
     // these are wsdl properties
     @Bean(name = "insurance")
     public DefaultWsdl11Definition convertToWsdl(XsdSchema xsdSchema){

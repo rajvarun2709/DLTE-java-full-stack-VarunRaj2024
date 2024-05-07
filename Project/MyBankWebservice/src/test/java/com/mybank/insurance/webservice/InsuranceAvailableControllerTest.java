@@ -2,21 +2,24 @@ package com.mybank.insurance.webservice;
 import com.mybank.dao.insurance.entity.InsuranceAvailable;
 import com.mybank.dao.insurance.exceptions.InsuranceNotFoundException;
 import com.mybank.dao.insurance.remotes.InsuranceAvailableRepository;
+import com.mybank.insurance.webservice.mvc.InsuranceWebController;
 import com.mybank.insurance.webservice.rest.controller.InsuranceAvailableController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 
 import java.sql.SQLException;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.when;
 
@@ -38,7 +41,7 @@ public class InsuranceAvailableControllerTest {
         when(availableDbRepo.apiFindById(anyInt())).thenReturn(Optional.of(insuranceAvailable));
 
         // Call the controller method
-        ResponseEntity<Object> response = controller.gettingOne(1);
+        ResponseEntity<Object> response = controller.gettingOne("1");
 
         // Assert that the response status is OK and the body matches the returned InsuranceAvailable object
 //        assertEquals(HttpStatus.OK, response.getStatusCode());
@@ -51,7 +54,7 @@ public class InsuranceAvailableControllerTest {
         when(availableDbRepo.apiFindById(anyInt())).thenThrow(InsuranceNotFoundException.class);
 
         // Call the controller method
-        ResponseEntity<Object> response = controller.gettingOne(1);
+        ResponseEntity<Object> response = controller.gettingOne("1");
 
         // Assert that the response status is NOT_FOUND
 
@@ -65,12 +68,62 @@ public class InsuranceAvailableControllerTest {
         when(availableDbRepo.apiFindById(anyInt())).thenThrow(SQLException.class);
 
         // Call the controller method
-        ResponseEntity<Object> response = controller.gettingOne(1);
+        ResponseEntity<Object> response = controller.gettingOne("1");
 
         // Assert that the response status is INTERNAL_SERVER_ERROR
         assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
         assertEquals(resourceBundle.getString("insurance.error"), response.getBody());
     }
+
+    @InjectMocks
+
+    private InsuranceWebController isnuranceController;
+
+
+    @Test
+
+    public void testLandingPage() {
+
+        String result = isnuranceController.landing();
+
+        assertEquals("index", result);
+
+    }
+
+    @Test
+
+    public void testHomePage() {
+
+        String result = isnuranceController.dash();
+
+        assertEquals("dashboard", result);
+
+    }
+
+    @Test
+
+    public void testLoginError() {
+
+        Model model = Mockito.mock(Model.class);
+
+        String result = isnuranceController.loginError(model);
+
+        assertEquals("index", result);
+
+
+    }
+
+    @Test
+
+    public void testUpdating() {
+
+        String result = isnuranceController.view();
+
+        assertEquals("viewInsurance", result);
+
+    }
+
+
 
 
 }

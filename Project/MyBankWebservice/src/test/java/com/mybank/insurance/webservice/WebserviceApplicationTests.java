@@ -1,4 +1,4 @@
-package com.mybank.insurance.webservice;//package com.mybank.insurance.webservice;
+package com.mybank.insurance.webservice;
 import com.mybank.dao.insurance.entity.InsuranceAvailable;
 import com.mybank.dao.insurance.remotes.InsuranceAvailableRepository;
 import com.mybank.insurance.webservice.soap.endpoint.InsuranceAvailableEndpoint;
@@ -11,6 +11,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import services.insurance.CallAllInsuranceAvailableRequest;
 import services.insurance.CallAllInsuranceAvailableResponse;
 import services.insurance.ServiceStatus;
+
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 import java.util.List;
@@ -18,7 +19,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
@@ -39,8 +39,8 @@ public class WebserviceApplicationTests {
         expectedServiceStatus.setMessage("OK");
 
         List<InsuranceAvailable> insuranceList = Stream.of(
-                new InsuranceAvailable(1, "health", "Health Insurance", "KeyBenefits1", 10),
-                new InsuranceAvailable(2, "Life", "Life Insurance", "KeyBenefits2", 20)
+                new InsuranceAvailable(1, "Health", "Health Insurance", "Healthy", 10),
+                new InsuranceAvailable(2, "Travel", "Travel Insurance", "Travelling", 20)
 
         ).collect((Collectors.toList()));
         when(repository.callAllInsuranceAvailable()).thenReturn(insuranceList);
@@ -52,11 +52,8 @@ public class WebserviceApplicationTests {
         assertNotNull(response);
         assertEquals(2, response.getInsurance().size());
         assertEquals(expectedServiceStatus.getStatus(), response.getServiceStatus().getStatus());
-        assertNotEquals(expectedServiceStatus.getMessage(), response.getServiceStatus().getMessage());// fail
         assertNotNull(response.getInsurance());
-        assertNotEquals(1, response.getInsurance().size());//fail
     }
-
     @Test
     public void testListLoans_Failure() throws SQLException {
         // Arrange
@@ -66,15 +63,17 @@ public class WebserviceApplicationTests {
         expectedServiceStatus.setMessage("OK");
 
         List<InsuranceAvailable> insuranceList = Stream.of(
-                new InsuranceAvailable(1, "health", "Health Insurance", "KeyBenefits1", 10),
-                new InsuranceAvailable(2, "Life", "Life Insurance", "KeyBenefits2", 20)
-
+                new InsuranceAvailable(1, "Health", "Health Insurance", "Healthy", 10),
+                new InsuranceAvailable(2, "Travel", "Travel Insurance", "Travelling", 20)
         ).collect((Collectors.toList()));
         when(repository.callAllInsuranceAvailable()).thenReturn(insuranceList);
 
+        // Act
         CallAllInsuranceAvailableResponse response = endpoint.listInsurance(request);
 
+        // Assert
         assertNotEquals(expectedServiceStatus.getMessage(), response.getServiceStatus().getMessage());// fail
         assertNotEquals(1, response.getInsurance().size());//fail
     }
+
 }

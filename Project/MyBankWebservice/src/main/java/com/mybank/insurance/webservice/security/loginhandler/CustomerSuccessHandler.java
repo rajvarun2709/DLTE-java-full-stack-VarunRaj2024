@@ -1,5 +1,4 @@
 package com.mybank.insurance.webservice.security.loginhandler;
-
 import com.mybank.dao.insurance.entity.Customer;
 import com.mybank.dao.insurance.remotes.CustomerRepository;
 import org.slf4j.Logger;
@@ -22,7 +21,7 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
     CustomerRepository service;
 
     Logger logger= LoggerFactory.getLogger(CustomerSuccessHandler.class);
-    ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
+    ResourceBundle resourceBundle = ResourceBundle.getBundle("app");
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
@@ -37,11 +36,8 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
                 service.updateAttempts(customer);
             }
             logger.warn(customer.getCustomerStatus());
-            //System.out.println(customer.getAttempts()+" after updates");
-//            super.setDefaultTargetUrl("/insurance/availed");
-//            super.setDefaultTargetUrl("/insurancerepo/insurance.wsdl");
+
             super.setDefaultTargetUrl("/ui/dash");
-//            super.setDefaultTargetUrl("/swagger-ui/index.html");
         } else {
             logger.warn(resourceBundle.getString("security.max"));
             super.setDefaultTargetUrl("/ui/?errors="+resourceBundle.getString("security.max"));

@@ -50,20 +50,9 @@ public class InsuranceAvailableDbRepo implements InsuranceAvailableRepository {
         return insuranceList;
     }
 
-//    @Override
-//    public Optional<InsuranceAvailable> apiFindById(int insuranceId){
-//        return Optional.ofNullable(jdbcTemplate.queryForObject("select * from MYBANK_APP_INSURANCEAVAILABLE where INSURANCE_ID=?",
-//                new Object[]{insuranceId},
-//                new BeanPropertyRowMapper<>(InsuranceAvailable.class)
-//        ));
-//    }
 
 
     public Optional<InsuranceAvailable> apiFindById(int insuranceId) throws SQLException {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if(customerRepository.findByUserName(authentication.getName()).getCustomerStatus().equalsIgnoreCase("InActive")){
-            throw new CustomerException("Customer Status InActive");
-        }
         CallableStatementCreator creator = con -> {
             CallableStatement statement = con.prepareCall("{call get_insurance_data(?, ?)}");
             statement.setLong(1, insuranceId);

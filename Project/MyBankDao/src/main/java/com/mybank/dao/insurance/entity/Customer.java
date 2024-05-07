@@ -1,48 +1,22 @@
 package com.mybank.dao.insurance.entity;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
-
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
 public class Customer implements UserDetails  {
-    @NotNull(message = "{user.customerId.null}")
-    @Digits(integer = 8, fraction = 0, message = "{user.customerId.null}")
     private Integer customerId;
-    @NotNull(message = "{user.customerName.null}")
-    @Pattern(regexp = "^[a-zA-Z ]+$", message = "{user.customerName.invalid}")
     private String customerName;
-    @NotNull(message = "{user.customerAddress.null}")
     private String customerAddress;
-    @NotNull(message = "{user.customerStatus.null}")
-    @Pattern(regexp = "^(open|closed)$", message = "{user.customerStatus.invalid}")
     private String customerStatus;
-    @NotNull(message = "{user.customerContact.null}")
-    @Pattern(regexp = "\\d{10}", message = "{user.customerContact.invalid}")
     private Long customerContact;
-    @NotNull(message = "{user.username.null}")
-    @Pattern(regexp = "^(?=.*[a-zA-Z])(?=.*\\d)[a-zA-Z\\d]+$", message = "{user.username.invalid}")
     private String username;
-    @NotNull(message = "{user.password.null}")
-    @Size(min = 8, message = "{user.password.invalid}")
     private String password;
     private int attempts;
 
     public int getAttempts() {
         return attempts;
     }
-
-//    public int getStatus() {
-//        return status;
-//    }
-//
-//    public void setStatus(int status) {
-//        this.status = status;
-//    }
 
     public void setAttempts(int attempts) {
         this.attempts = attempts;
@@ -147,16 +121,5 @@ public class Customer implements UserDetails  {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "customerId=" + customerId +
-                ", customerName='" + customerName + '\'' +
-                ", customerAddress='" + customerAddress + '\'' +
-                ", customerStatus='" + customerStatus + '\'' +
-                ", customerContact=" + customerContact +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
+
 }

@@ -1,19 +1,10 @@
 package com.mybank.dao.insurance.entity;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
 
 public class InsuranceAvailable {
-    @NotNull(message = "{available.insuranceId.null}")
-    @Digits(integer = 8, fraction = 0, message = "{available.insuranceId.invalid}")
     private Integer insuranceId;
-    @NotNull(message = "{available.insuranceType.null}")
     private String insuranceType;
-    @NotNull(message = "{available.insuranceName.null}")
     private String insuranceName;
-    @NotNull(message = "{available.insuranceKeyBenefits.null}")
     private String insuranceKeyBenefits;
-    @NotNull(message = "{available.insuranceLifetime.null}")
-    @Digits(integer = 4, fraction = 0, message = "{user.customerId.null}")
     private Integer insuranceLifetime;
 
     @Override

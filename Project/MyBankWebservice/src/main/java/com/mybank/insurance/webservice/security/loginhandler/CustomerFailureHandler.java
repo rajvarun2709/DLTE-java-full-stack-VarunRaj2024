@@ -11,7 +11,6 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
 import org.springframework.stereotype.Component;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,7 +24,7 @@ public class CustomerFailureHandler extends SimpleUrlAuthenticationFailureHandle
     CustomerRepository service;
 
     Logger logger= LoggerFactory.getLogger(CustomerSuccessHandler.class);
-    ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
+    ResourceBundle resourceBundle = ResourceBundle.getBundle("app");
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
@@ -38,7 +37,7 @@ public class CustomerFailureHandler extends SimpleUrlAuthenticationFailureHandle
                         customer.setAttempts(customer.getAttempts() + 1);
                         service.updateAttempts(customer);
                         logger.warn(resourceBundle.getString("security.invalid"));
-                        exception = new LockedException((4 - customer.getAttempts()) + resourceBundle.getString("security.invalid"));
+                        exception = new LockedException(  resourceBundle.getString("security.invalid")+(4 - customer.getAttempts()));
                         String err = customer.getAttempts() + " " + exception.getMessage();
                         logger.warn(err);
                         super.setDefaultFailureUrl("/ui/?error=" + err);
@@ -50,7 +49,7 @@ public class CustomerFailureHandler extends SimpleUrlAuthenticationFailureHandle
 
                     }
                 } else {
-//                    logger.warn(resourceBundle.getString("security.suspend"));
+
                     super.setDefaultFailureUrl("/ui/?error="+resourceBundle.getString("security.suspend"));
 
                 }
@@ -61,10 +60,7 @@ public class CustomerFailureHandler extends SimpleUrlAuthenticationFailureHandle
             exception = new LockedException(resourceBundle.getString("customer.null"));
             super.setDefaultFailureUrl("/ui/?error=true"+exception.getMessage());
         }
-//        else{
-//            logger.warn(resourceBundle.getString("security.null"));
-//        }
-//        super.setDefaultFailureUrl("/login?error=true");
+
         super.onAuthenticationFailure(request, response, exception);
     }
 }

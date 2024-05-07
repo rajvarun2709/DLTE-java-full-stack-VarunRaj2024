@@ -69,12 +69,7 @@
             border-color: #182052;
         }
 
-        /*.page-number.active {*/
-        /*    z-index: 3;*/
-        /*    color: #fff;*/
-        /*    background-color: #007bff;*/
-        /*    border-color: #007bff;*/
-        /*}*/
+
         .card-container {
             height: 400px; /* Fixed height for the card container */
             overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
@@ -139,7 +134,24 @@
 </head>
 <body >
 <div th:replace="dashboard :: dashboard"></div>
+
+<br>
+<!-- Previous and Next buttons -->
+<div class="container-fluid">
+    <div class="row justify-content-between">
+        <div class="col-auto">
+            <ul class="pager" style="list-style: none; ">
+                <li class="previous">
+                    <a href="javascript:void(0)" onclick="window.history.back()" class="btn text-light ml-0" style=" border-radius: 10px; font-weight: bold; background-color: #182052">Previous</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 <h2 class="mb-0" style="color: #182052; font-weight: bold; font-family: 'Poppins', sans-serif; padding: 20px;">View available Insurance</h2>
+
 <div class="container">
     <!-- Search by Insurance ID -->
     <div class="form-row justify-content-center">
@@ -147,7 +159,7 @@
             <div class="form-group" style="border: 1px solid #182052; padding: 10px;">
                 <h6 class="mb-3" style="color: #182052; font-weight: bold;">Find by ID</h6>
                 <div class="input-group">
-                    <input  id="searchByIdInput" type="text" class="form-control" placeholder="Search by Insurance ID">
+                    <input  id="searchByIdInput" type="number" class="form-control" placeholder="Search by Insurance ID">
                     <button  id="searchByIdButton" type="button">Search</button>
                 </div>
             </div>
@@ -164,7 +176,7 @@
                         <input type="text" class="form-control" placeholder="Enter Maximum Amount">
                     </div>
                     <div class="col-auto" style="padding-left: 0;">
-                        <button style=" padding: 5px"  type="button">Search</button>
+                        <button id="searchByIdButtontwo" style=" padding: 5px"  type="button">Search</button>
                     </div>
                 </div>
             </div>
@@ -210,41 +222,21 @@
 <script>
     $(document).ready(() => {
 
-        const insuranceData = [];
+        let insuranceData = [];
         let currentPage = 1;
         const cardsPerPage = 8;
         let totalPages = 0; // Initialize totalPages
 
-        window.appendDataToForm = function(index) {
-            // Get data from modal fields using unique IDs based on the index
-            const insuranceID = document.getElementById(`insuranceID${index}`).value;
-            const insuranceType = document.getElementById(`insuranceType${index}`).value;
-            const insuranceName = document.getElementById(`insuranceName${index}`).value;
-            const insuranceKeyBenefits = document.getElementById(`insuranceKeyBenefits${index}`).value;
-            const insuranceLifetime = document.getElementById(`insuranceLifetime${index}`).value;
-
-            // Create a new form data object
-            const formData = new FormData();
-
-            // Append data to the form data object
-            formData.append('insuranceID', insuranceID);
-            formData.append('insuranceType', insuranceType);
-            formData.append('insuranceName', insuranceName);
-            formData.append('insuranceKeyBenefits', insuranceKeyBenefits);
-            formData.append('insuranceLifetime', insuranceLifetime);
-
-            // Redirect to the applyInsurance.html page with appended data
-            window.location.href = '../ui/apply?' + new URLSearchParams(formData).toString();
-        }
-
         const fetchInsuranceData = () => {
+            insuranceData.length = 0; // Clear existing insurance data
+
             var soapRequest = `
-                <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins="http://insurance.services">
-                    <soapenv:Header/>
-                    <soapenv:Body>
-                        <ins:callAllInsuranceAvailableRequest/>
-                    </soapenv:Body>
-                </soapenv:Envelope>`;
+        <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins="http://insurance.services">
+            <soapenv:Header/>
+            <soapenv:Body>
+                <ins:callAllInsuranceAvailableRequest/>
+            </soapenv:Body>
+        </soapenv:Envelope>`;
 
             $.ajax({
                 url: "http://localhost:8084/insurancerepo/insurance.wsdl",
@@ -275,7 +267,6 @@
         };
 
 
-
         const fetchInsuranceById = (insuranceId) => {
             insuranceData.length = 0; // Clear existing insurance data
 
@@ -296,18 +287,38 @@
                     insuranceData.push({insuranceID,insuranceType,insuranceName,insuranceKeyBenefits,insuranceLifetime})
 
                     generateInsuranceCards();
+
                 },
                 error: function(xhr, status, error) {
                     console.error("Error fetching insurance data:", error);
                     if (xhr.status === 404) {
-                        alert("Insurance not found.");
+                        const alertCardHtml = `
+                    <div class="alert alert-danger alert-dismissible fade show position-fixed top-0 start-50 translate-middle-x" role="alert">
+                        <strong>Insurance not found!</strong> Please try a different ID.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
+                        $("body").append(alertCardHtml); // Append the alert directly to the body
+
+                        // Remove the alert after 2 seconds
+                        setTimeout(() => {
+                            $(".alert").alert("close");
+                        }, 2000);
                     } else {
-                        alert("An error occurred while fetching insurance data.");
+                        const alertCardHtml = `
+                    <div class="alert alert-danger alert-dismissible fade show position-fixed top-0 start-50 translate-middle-x" role="alert">
+                        <strong>Unexpected error occured while fetching data</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
+                        $("body").append(alertCardHtml); // Append the alert directly to the body
+
+                        // Remove the alert after 2 seconds
+                        setTimeout(() => {
+                            $(".alert").alert("close");
+                        }, 2000);
                     }
                 }
             });
         };
-
 
 
         const generateInsuranceCards = () => {
@@ -419,15 +430,29 @@
 
         $("#searchByIdButton").click(() => {
             const insuranceId = $("#searchByIdInput").val();
-            console.log(insuranceId.isEmpty)
-            if (insuranceId.trim() === ''){
-                fetchInsuranceData();
 
-            }else// Get the value of insurance ID input field
-                fetchInsuranceById(insuranceId); // Call the function to fetch insurance details by ID
+                fetchInsuranceById(insuranceId);
+
+                // Call the function to fetch insurance details by ID
         });
 
+        $('#searchByIdButtontwo').click(() => {
+            window.location.href = '/error?code=404&msg=Page under construction';
+        });
 
+        $(document).on('click', '.apply', function() {
+            window.location.href = '/error?code=404&msg=Page under construction';
+        });
+
+        $("#searchByIdInput").on('keyup focusout', () => {
+            const insuranceId = $("#searchByIdInput").val();
+            console.log(insuranceId.isEmpty)
+            if (insuranceId.trim() === ''){
+
+                fetchInsuranceData();
+
+            }
+        });
 
         // Function to update pagination buttons visibility
         const updatePaginationButtons = () => {
